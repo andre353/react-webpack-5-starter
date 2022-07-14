@@ -1,0 +1,119 @@
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  // min-height: 100vh;
+  font-family: Montserrat, sans-serif;
+	color: $color-primary;
+	background-color: $color-secondary;
+}
+
+
+img, svg {
+	display: block;
+  // max-width: 100%;
+  // max-height: 100%; // for svg sprite
+  height: auto;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+iframe {
+  border: none;
+}
+
+/*
+Доступно скрываю элементы
+*/
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+
+/*
+Пример контейнера
+Если контейнер 1180px по макету,
+то для max-width прибавляем паддинги 30px*2, 
+в итоге 1240px
+Чтобы контент не прижимался к краям экрана
+*/
+
+.container {
+  // max-width: px;
+  // padding: 0 px;
+  margin: 0 auto;
+
+	// @include desktop {
+	// 	max-width: px; // 
+	// }
+	// @include laptop {
+	// 	max-width: px; // тут paddings уже меняются, прописываем отдельно
+	// 	padding: px;
+	// }
+	// @include tablet {
+	// 	max-width: px; 
+	// }
+	// @include mobile {
+	// 	max-width: px;
+	// 	padding: 0;
+	// }
+}
+
+// header {
+// 	margin-bottom: px;
+
+// 	@include tablet {
+// 		margin-bottom: px;
+// 	}
+// }
+
+// main {
+// 	margin-bottom: px;
+
+// 	@include tablet {
+// 		margin-bottom: px;
+// 	}
+// }
+
+input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}

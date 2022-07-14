@@ -1,0 +1,31 @@
+$color-primary: #000000;
+$color-secondary: rgb(241, 203, 203);
+
+$desktop: 1600px;
+$laptop: 1200px;
+$tablet: 1000px;
+$mobile: 560px;
+
+@mixin desktop {
+	@media screen and (max-width: #{$desktop}) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: #{$laptop}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (max-width: #{$tablet}) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media screen and (max-width: #{$mobile}) {
+		@content;
+	}
+}
